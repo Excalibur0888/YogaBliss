@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - YogaBliss</title>
+    <meta
+      name="description"
+      content="Get in touch with YogaBliss. Contact us for product inquiries, support, or any questions about our yoga equipment and accessories."
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
   </head>
@@ -13,11 +17,38 @@
         <div class="container">
           <div class="header__top-inner">
             <div class="header__info">
-              <p>Free shipping on orders over ₹2000</p>
+              <div class="header__info-item">
+                <svg class="icon icon--white" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-3.682l5.93-5.93-1.41-1.41-4.52 4.52-2.52-2.52L8.38 12.4z"/>
+                </svg>
+                <p>Free shipping on orders over ₹2000</p>
+              </div>
+              <div class="header__info-item">
+                <svg class="icon icon--white" viewBox="0 0 24 24">
+                  <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+                <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+              </div>
+              <div class="header__info-item">
+                <svg class="icon icon--white" viewBox="0 0 24 24">
+                  <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                </svg>
+                <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
+              </div>
             </div>
             <div class="header__contact">
-              <a href="tel:+919125419384">+91 91254-19384</a>
-              <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
+              <div class="header__contact-item">
+                <svg class="icon icon--white" viewBox="0 0 24 24">
+                  <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                </svg>
+                <a href="tel:+919125419384">+91 91254-19384</a>
+              </div>
+              <div class="header__contact-item">
+                <svg class="icon icon--white" viewBox="0 0 24 24">
+                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                </svg>
+                <a href="https://maps.app.goo.gl/JfVNeeeQxSNsytSM6" target="_blank">Mumbai, India</a>
+              </div>
             </div>
           </div>
         </div>
@@ -41,7 +72,12 @@
               </button>
               <ul class="nav__list">
                 <li><a href="index.html" class="nav__link">Home</a></li>
-                <li><a href="contact.html" class="nav__link">Contact</a></li>
+                <li><a href="products.html" class="nav__link">Products</a></li>
+                <li><a href="about.html" class="nav__link">About</a></li>
+                <li><a href="team.html" class="nav__link">Team</a></li>
+                <li>
+                  <a href="contact.html" class="nav__link active">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -50,116 +86,211 @@
     </header>
 
     <main class="main">
-      <div class="page-content">
+      <section class="page-header">
         <div class="container">
           <h1 class="page-title">Contact Us</h1>
+          <nav class="breadcrumbs">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </div>
+      </section>
 
-          <div class="contact">
-            <div class="contact__grid">
-              <div class="contact__info">
+      <section class="contact">
+        <div class="container">
+          <div class="contact__grid">
+            <div class="contact__info">
+              <h2>Get in Touch</h2>
+              <p>
+                Have questions about our products or need assistance with your
+                order? We're here to help!
+              </p>
+
+              <div class="contact__details">
                 <div class="contact__item">
-                  <h3>Visit Our Store</h3>
-                  <p>
+                  <div class="contact__item-icon">
                     <img
                       src="img/location.svg"
                       alt="Location"
                       width="24"
                       height="24"
                     />
-                    DAR Quarters, Chembur Gaothan, Anushakti Nagar, Mumbai,
-                    Maharashtra 400094, India
-                  </p>
+                  </div>
+                  <div class="contact__item-content">
+                    <h3>Visit Us</h3>
+                    <p>
+                      <a
+                        href="https://maps.app.goo.gl/JfVNeeeQxSNsytSM6"
+                        target="_blank"
+                      >
+                        DAR Quarters, Chembur Gaothan,<br />
+                        Anushakti Nagar, Mumbai,<br />
+                        Maharashtra 400094, India
+                      </a>
+                    </p>
+                  </div>
                 </div>
+
                 <div class="contact__item">
-                  <h3>Store Hours</h3>
-                  <p>
-                    Monday - Saturday: 10:00 AM - 8:00 PM<br />Sunday: Closed
-                  </p>
-                </div>
-                <div class="contact__item">
-                  <h3>Get in Touch</h3>
-                  <p>
+                  <div class="contact__item-icon">
                     <img
                       src="img/phone.svg"
                       alt="Phone"
                       width="24"
                       height="24"
                     />
-                    <a href="tel:+919125419384">+91 91254-19384</a>
-                  </p>
-                  <p>
+                  </div>
+                  <div class="contact__item-content">
+                    <h3>Call Us</h3>
+                    <p>
+                      <a href="tel:+919125419384">+91 91254-19384</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact__item">
+                  <div class="contact__item-icon">
                     <img
                       src="img/email.svg"
                       alt="Email"
                       width="24"
                       height="24"
                     />
-                    <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
-                  </p>
+                  </div>
+                  <div class="contact__item-content">
+                    <h3>Email Us</h3>
+                    <p>
+                      <a href="mailto:yogabliss@gmail.com"
+                        >yogabliss@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="contact__item">
+                  <div class="contact__item-icon">
+                    <svg class="icon icon--white" viewBox="0 0 24 24">
+                      <path
+                        d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM13 7h-2v6l4.75 2.85.75-1.23-3.5-2.07V7z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact__item-content">
+                    <h3>Business Hours</h3>
+                    <div class="business-hours">
+                      <div class="business-hours__item">
+                        <div class="business-hours__day">
+                          <svg class="icon icon--primary" viewBox="0 0 24 24">
+                            <path
+                              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM13 7h-2v6l4.75 2.85.75-1.23-3.5-2.07V7z"
+                            />
+                          </svg>
+                          <span>Monday - Friday</span>
+                        </div>
+                        <span>9:00 AM - 6:00 PM</span>
+                      </div>
+                      <div class="business-hours__item">
+                        <div class="business-hours__day">
+                          <svg class="icon icon--primary" viewBox="0 0 24 24">
+                            <path
+                              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM13 7h-2v6l4.75 2.85.75-1.23-3.5-2.07V7z"
+                            />
+                          </svg>
+                          <span>Saturday</span>
+                        </div>
+                        <span>10:00 AM - 4:00 PM</span>
+                      </div>
+                      <div class="business-hours__item">
+                        <div class="business-hours__day">
+                          <svg class="icon icon--primary" viewBox="0 0 24 24">
+                            <path
+                              d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zM13 7h-2v6l4.75 2.85.75-1.23-3.5-2.07V7z"
+                            />
+                          </svg>
+                          <span>Sunday</span>
+                        </div>
+                        <span>Closed</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="contact__form">
-                <h2>Send Us a Message</h2>
-                <form>
-                  <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <select id="subject" name="subject" required>
-                      <option value="">Select a subject</option>
-                      <option value="order">Order Inquiry</option>
-                      <option value="product">Product Information</option>
-                      <option value="support">Customer Support</option>
-                      <option value="other">Other</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      rows="5"
-                      required
-                    ></textarea>
-                  </div>
-                  <div class="form-group form-group--checkbox">
-                    <input
-                      type="checkbox"
-                      id="contact-privacy"
-                      name="privacy"
-                      required
-                    />
-                    <label for="contact-privacy"
-                      >I agree with
-                      <a href="privacy-policy.html">Privacy Policy</a></label
-                    >
-                  </div>
-                  <button type="submit" class="btn btn--primary">
-                    Send Message
-                  </button>
-                </form>
-              </div>
             </div>
-            <div class="contact__map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1219.3095821914835!2d72.89798031180374!3d19.058976968110038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7005d7b77e9%3A0x60b4729fffb6e667!2sVenkatagiri!5e1!3m2!1sru!2sru!4v1737244854389!5m2!1sru!2sru"
-                width="100%"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
+
+            <div class="contact__form">
+              <h2>Send Us a Message</h2>
+              <form action="thanks.html" method="POST" class="form">
+                <div class="form-group">
+                  <label for="name">Your Name *</label>
+                  <input type="text" id="name" name="name" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <select id="subject" name="subject" required>
+                    <option value="">Select a subject</option>
+                    <option value="product">Product Inquiry</option>
+                    <option value="order">Order Status</option>
+                    <option value="support">Customer Support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Your Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="form-group form-group--checkbox">
+                  <input type="checkbox" id="privacy" name="privacy" required />
+                  <label for="privacy"
+                    >I agree with
+                    <a href="privacy-policy.html">Privacy Policy</a></label
+                  >
+                </div>
+
+                <button type="submit" class="btn btn--primary">
+                  Send Message
+                </button>
+              </form>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <h2 class="section-title">Our Location</h2>
+          <div class="map__wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1757.886404292303!2d72.8979803!3d19.058977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7005d7b77e9%3A0x60b4729fffb6e667!2sVenkatagiri!5e1!3m2!1sru!2sru!4v1737412468394!5m2!1sru!2sru"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
@@ -177,18 +308,16 @@
               </a>
               <p>
                 Your trusted source for premium yoga equipment and accessories
-                in India. We believe in quality, sustainability, and enhancing
-                your yoga practice.
+                in India.
               </p>
             </div>
             <div class="footer__nav">
               <h3>Company</h3>
               <ul>
-                <li><a href="index.html#about">About Us</a></li>
-                <li><a href="index.html#features">Features</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
               </ul>
             </div>
             <div class="footer__contact">
@@ -225,12 +354,39 @@
       <div class="footer__bottom">
         <div class="container">
           <div class="footer__bottom-inner">
-            <p>&copy; 2024 YogaBliss. All rights reserved.</p>
+            <p>&copy; 2024 YogaBliss. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
           </div>
         </div>
       </div>
     </footer>
 
     <script src="js/main.js"></script>
+
+    <style>
+      .business-hours {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .business-hours__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--color-border);
+      }
+
+      .business-hours__day {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .business-hours__day .icon {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
   </body>
 </html>

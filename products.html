@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - YogaBliss</title>
+    <meta name="description" content="Explore our collection of premium yoga mats, blocks, straps, and accessories. High-quality yoga equipment for all levels of practice.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__top-inner">
+                    <div class="header__info">
+                        <div class="header__info-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-3.682l5.93-5.93-1.41-1.41-4.52 4.52-2.52-2.52L8.38 12.4z"/>
+                            </svg>
+                            <p>Free shipping on orders over ₹2000</p>
+                        </div>
+                        <div class="header__info-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                        <div class="header__info-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                            </svg>
+                            <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="header__contact">
+                        <div class="header__contact-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <a href="tel:+919125419384">+91 91254-19384</a>
+                        </div>
+                        <div class="header__contact-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/JfVNeeeQxSNsytSM6" target="_blank">Mumbai, India</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__main">
+            <div class="container">
+                <div class="header__main-inner">
+                    <a href="index.html" class="logo">
+                        <img src="img/logo.svg" alt="YogaBliss logo" width="140" height="40">
+                    </a>
+                    <nav class="nav">
+                        <button class="burger" aria-label="Toggle menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        <ul class="nav__list">
+                            <li><a href="index.html" class="nav__link">Home</a></li>
+                            <li><a href="products.html" class="nav__link active">Products</a></li>
+                            <li><a href="about.html" class="nav__link">About</a></li>
+                            <li><a href="team.html" class="nav__link">Team</a></li>
+                            <li><a href="contact.html" class="nav__link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Our Products</h1>
+                <nav class="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Products</li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="products-filter">
+            <div class="container">
+                <div class="products-filter__inner">
+                    <div class="products-filter__categories">
+                        <button class="filter-btn active" data-category="all">All Products</button>
+                        <button class="filter-btn" data-category="mats">Yoga Mats</button>
+                        <button class="filter-btn" data-category="props">Props & Blocks</button>
+                        <button class="filter-btn" data-category="accessories">Accessories</button>
+                    </div>
+                    <div class="products-filter__sort">
+                        <label for="sort">Sort by:</label>
+                        <select id="sort" class="sort-select">
+                            <option value="popularity">Popularity</option>
+                            <option value="price-low-high">Price: Low to High</option>
+                            <option value="price-high-low">Price: High to Low</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="container">
+                <div class="products__grid">
+                    <!-- Product Card -->
+                    <div class="product-card" data-category="mats" data-rating="5" data-popularity="95" data-date="2024-03-01">
+                        <div class="product-card__image">
+                            <img src="img/product-1.jpg" alt="Premium Yoga Mat" width="300" height="300">
+                            <div class="product-card__badge">Best Seller</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Premium Yoga Mat</h3>
+                            <p>Non-slip, eco-friendly yoga mat</p>
+                            <span class="price" data-price="1999">₹1,999</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="mats" data-rating="4" data-popularity="85" data-date="2024-02-15">
+                        <div class="product-card__image">
+                            <img src="img/product-3.jpg" alt="Cork Yoga Mat" width="300" height="300">
+                            <div class="product-card__badge">New</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Cork Yoga Mat</h3>
+                            <p>Natural cork surface for superior grip</p>
+                            <span class="price" data-price="2499">₹2,499</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Props & Blocks -->
+                    <div class="product-card" data-category="props" data-rating="4" data-popularity="80" data-date="2024-01-20">
+                        <div class="product-card__image">
+                            <img src="img/product-2.jpg" alt="Yoga Wheel" width="300" height="300">
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Wheel</h3>
+                            <p>Perfect for back bends and stretching</p>
+                            <span class="price" data-price="1299">₹1,299</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="props" data-rating="5" data-popularity="90" data-date="2024-02-01">
+                        <div class="product-card__image">
+                            <img src="img/product-4.jpg" alt="Cork Yoga Block" width="300" height="300">
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Cork Yoga Block</h3>
+                            <p>Sustainable cork yoga block for better support</p>
+                            <span class="price" data-price="899">₹899</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Accessories -->
+                    <div class="product-card" data-category="accessories" data-rating="4" data-popularity="75" data-date="2023-12-15">
+                        <div class="product-card__image">
+                            <img src="img/product-6.jpg" alt="Yoga Strap" width="300" height="300">
+                            <div class="product-card__badge">Sale</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Strap</h3>
+                            <p>Cotton yoga strap for stretching</p>
+                            <div class="price">
+                                <span class="price--old">₹599</span>
+                                <span class="price--new" data-price="399">₹399</span>
+                            </div>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-rating="4" data-popularity="70" data-date="2023-12-01">
+                        <div class="product-card__image">
+                            <img src="img/product-7.jpg" alt="Yoga Towel" width="300" height="300">
+                            <div class="product-card__badge">Sale</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Towel</h3>
+                            <p>Non-slip microfiber yoga towel</p>
+                            <div class="price">
+                                <span class="price--old">₹999</span>
+                                <span class="price--new" data-price="699">₹699</span>
+                            </div>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-rating="4" data-popularity="65" data-date="2023-11-15">
+                        <div class="product-card__image">
+                            <img src="img/product-5.jpg" alt="Meditation Cushion" width="300" height="300">
+                            <div class="product-card__badge">New</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Meditation Cushion</h3>
+                            <p>Comfortable zafu cushion for meditation</p>
+                            <div class="price">
+                                <span class="price--old">₹1499</span>
+                                <span class="price--new" data-price="1199">₹1199</span>
+                            </div>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-rating="4" data-popularity="60" data-date="2023-10-20">
+                        <div class="product-card__image">
+                            <img src="img/product-8.jpg" alt="Yoga Mat Bag" width="300" height="300">
+                            <div class="product-card__badge">Sale</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Mat Bag</h3>
+                            <p>Canvas yoga mat carrier with pocket</p>
+                            <div class="price">
+                                <span class="price--old">₹1299</span>
+                                <span class="price--new" data-price="899">₹899</span>
+                            </div>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="accessories" data-rating="5" data-popularity="88" data-date="2024-01-10">
+                        <div class="product-card__image">
+                            <img src="img/product-9.jpg" alt="Yoga Blocks Set" width="300" height="300">
+                            <div class="product-card__badge">Popular</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Blocks Set</h3>
+                            <p>High-density foam blocks for support and stability</p>
+                            <div class="price">
+                                <span class="price--old">₹1299</span>
+                                <span class="price--new" data-price="999">₹999</span>
+                            </div>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features__grid">
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="img/quality.svg" alt="Premium Quality" width="48" height="48">
+                        </div>
+                        <h3>Premium Quality</h3>
+                        <p>Carefully selected materials for durability and comfort</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="img/shipping.svg" alt="Fast Shipping" width="48" height="48">
+                        </div>
+                        <h3>Fast Shipping</h3>
+                        <p>Free delivery across India on orders over ₹2000</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="img/support.svg" alt="Expert Support" width="48" height="48">
+                        </div>
+                        <h3>Expert Support</h3>
+                        <p>Get help choosing the right equipment</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card__icon">
+                            <img src="img/return.svg" alt="Easy Returns" width="48" height="48">
+                        </div>
+                        <h3>Easy Returns</h3>
+                        <p>30-day return policy for your peace of mind</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <div class="newsletter__inner">
+                    <div class="newsletter__content">
+                        <h2>Stay Updated</h2>
+                        <p>Subscribe to receive updates about new products, exclusive deals, and more.</p>
+                    </div>
+                    <form class="newsletter__form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <div class="form-group form-group--checkbox">
+                            <input type="checkbox" id="newsletter-privacy" name="privacy" required>
+                            <label for="newsletter-privacy">I agree with <a href="privacy-policy.html">Privacy Policy</a></label>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__main">
+            <div class="container">
+                <div class="footer__grid">
+                    <div class="footer__info">
+                        <a href="index.html" class="logo">
+                            <img src="img/logo-white.svg" alt="YogaBliss logo" width="140" height="40">
+                        </a>
+                        <p>Your trusted source for premium yoga equipment and accessories in India.</p>
+                    </div>
+                    <div class="footer__nav">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contact">
+                        <h3>Contact Us</h3>
+                        <address>
+                            <p>
+                                <img src="img/location.svg" alt="Location" width="24" height="24">
+                                <a href="https://maps.app.goo.gl/JfVNeeeQxSNsytSM6" target="_blank">
+                                    DAR Quarters, Chembur Gaothan, Anushakti Nagar, Mumbai, Maharashtra 400094, India
+                                </a>
+                            </p>
+                            <p>
+                                <img src="img/phone.svg" alt="Phone" width="24" height="24">
+                                <a href="tel:+919125419384">+91 91254-19384</a>
+                            </p>
+                            <p>
+                                <img src="img/email.svg" alt="Email" width="24" height="24">
+                                <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-inner">
+                    <p>&copy; 2024 YogaBliss. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

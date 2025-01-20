@@ -235,4 +235,174 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.classList.remove('active');
         });
     });
+
+    // Tabs functionality
+    function initTabs() {
+        const tabButtons = document.querySelectorAll('.tab-button');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                const tabId = button.getAttribute('data-tab');
+                document.querySelector(`#${tabId}`).classList.add('active');
+            });
+        });
+    }
+
+    // Products sorting functionality
+    function initProductSorting() {
+        const sortSelect = document.querySelector('.sort-select');
+        if (!sortSelect) return;
+
+        sortSelect.addEventListener('change', (e) => {
+            const sortValue = e.target.value;
+            const productsGrid = document.querySelector('.products__grid');
+            const products = Array.from(productsGrid.children);
+
+            products.sort((a, b) => {
+                // Получаем актуальную цену (со скидкой, если есть)
+                const getPriceValue = (element) => {
+                    const newPrice = element.querySelector('.price--new');
+                    const regularPrice = element.querySelector('.price');
+                    if (newPrice) {
+                        return parseFloat(newPrice.dataset.price);
+                    }
+                    return parseFloat(regularPrice.dataset.price);
+                };
+
+                const priceA = getPriceValue(a);
+                const priceB = getPriceValue(b);
+                const popularityA = parseInt(a.dataset.popularity) || 0;
+                const popularityB = parseInt(b.dataset.popularity) || 0;
+
+                switch(sortValue) {
+                    case 'price-low-high':
+                        return priceA - priceB;
+                    case 'price-high-low':
+                        return priceB - priceA;
+                    case 'popularity':
+                        return popularityB - popularityA;
+                    default:
+                        return 0;
+                }
+            });
+
+            // Анимация исчезновения
+            productsGrid.style.opacity = '0';
+            
+            setTimeout(() => {
+                // Очищаем и добавляем отсортированные продукты
+                productsGrid.innerHTML = '';
+                products.forEach(product => productsGrid.appendChild(product));
+                
+                // Анимация появления
+                productsGrid.style.opacity = '1';
+            }, 300);
+        });
+    }
+
+    // Products filtering functionality
+    function initProductFiltering() {
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        if (!filterButtons.length) return;
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const category = button.getAttribute('data-category');
+                const products = document.querySelectorAll('.product-card');
+
+                products.forEach(product => {
+                    const productElement = product;
+                    if (category === 'all' || product.getAttribute('data-category') === category) {
+                        productElement.style.opacity = '0';
+                        setTimeout(() => {
+                            productElement.style.display = '';
+                            setTimeout(() => {
+                                productElement.style.opacity = '1';
+                            }, 50);
+                        }, 300);
+                    } else {
+                        productElement.style.opacity = '0';
+                        setTimeout(() => {
+                            productElement.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+    }
+
+    // Добавляем плавные переходы для продуктов
+    const productsGrid = document.querySelector('.products__grid');
+    if (productsGrid) {
+        productsGrid.style.transition = 'opacity 0.3s ease';
+        const products = productsGrid.querySelectorAll('.product-card');
+        products.forEach(product => {
+            product.style.transition = 'opacity 0.3s ease';
+        });
+    }
+
+    // Initialize all functionality when DOM is loaded
+    initTabs();
+    initProductSorting();
+    initProductFiltering();
+
+    // Функция для анимации чисел
+    function animateNumbers() {
+        const stats = document.querySelectorAll('.stat-card__number');
+        
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = entry.target;
+                    const targetNumber = parseFloat(target.getAttribute('data-number'));
+                    const duration = 2000; // 2 секунды
+                    const steps = 60;
+                    const stepValue = targetNumber / steps;
+                    let currentValue = 0;
+                    
+                    const interval = setInterval(() => {
+                        currentValue += stepValue;
+                        if (currentValue >= targetNumber) {
+                            target.textContent = target.hasAttribute('data-plus') ? 
+                                Math.round(targetNumber) + '+' : 
+                                target.hasAttribute('data-percentage') ? 
+                                    Math.round(targetNumber) + '%' : 
+                                    Math.round(targetNumber).toLocaleString();
+                            clearInterval(interval);
+                        } else {
+                            target.textContent = target.hasAttribute('data-plus') ? 
+                                Math.round(currentValue) + '+' : 
+                                target.hasAttribute('data-percentage') ? 
+                                    Math.round(currentValue) + '%' : 
+                                    Math.round(currentValue).toLocaleString();
+                        }
+                    }, duration / steps);
+                    
+                    observer.unobserve(target);
+                }
+            });
+        }, options);
+
+        stats.forEach(stat => observer.observe(stat));
+    }
+
+    // Запускаем анимацию при загрузке страницы
+    animateNumbers();
 }); 

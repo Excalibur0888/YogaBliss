@@ -14,11 +14,38 @@
             <div class="container">
                 <div class="header__top-inner">
                     <div class="header__info">
-                        <p>Free shipping on orders over ₹2000</p>
+                        <div class="header__info-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-3.682l5.93-5.93-1.41-1.41-4.52 4.52-2.52-2.52L8.38 12.4z"/>
+                            </svg>
+                            <p>Free shipping on orders over ₹2000</p>
+                        </div>
+                        <div class="header__info-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                            </svg>
+                            <p>Mon-Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                        <div class="header__info-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/>
+                            </svg>
+                            <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
+                        </div>
                     </div>
                     <div class="header__contact">
-                        <a href="tel:+919125419384">+91 91254-19384</a>
-                        <a href="mailto:yogabliss@gmail.com">yogabliss@gmail.com</a>
+                        <div class="header__contact-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <a href="tel:+919125419384">+91 91254-19384</a>
+                        </div>
+                        <div class="header__contact-item">
+                            <svg class="icon icon--white" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <a href="https://maps.app.goo.gl/JfVNeeeQxSNsytSM6" target="_blank">Mumbai, India</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -36,10 +63,10 @@
                             <span></span>
                         </button>
                         <ul class="nav__list">
-                            <li><a href="index.html" class="nav__link">Home</a></li>
-                            <li><a href="#products" class="nav__link">Products</a></li>
-                            <li><a href="#features" class="nav__link">Features</a></li>
-                            <li><a href="#about" class="nav__link">About</a></li>
+                            <li><a href="index.html" class="nav__link active">Home</a></li>
+                            <li><a href="products.html" class="nav__link">Products</a></li>
+                            <li><a href="about.html" class="nav__link">About</a></li>
+                            <li><a href="team.html" class="nav__link">Team</a></li>
                             <li><a href="contact.html" class="nav__link">Contact</a></li>
                         </ul>
                     </nav>
@@ -86,22 +113,23 @@
 
         <section class="categories">
             <div class="container">
+                <h2 class="section-title">Shop by Category</h2>
                 <div class="categories__grid">
-                    <a href="contact.html" class="category-card">
+                    <a href="products.html" class="category-card">
                         <img src="img/category-1.jpg" alt="Yoga Mats" width="400" height="300">
                         <div class="category-card__content">
                             <h3>Yoga Mats</h3>
                             <span class="btn btn--small">Shop Now</span>
                         </div>
                     </a>
-                    <a href="contact.html" class="category-card">
+                    <a href="products.html" class="category-card">
                         <img src="img/category-2.jpg" alt="Blocks & Props" width="400" height="300">
                         <div class="category-card__content">
                             <h3>Blocks & Props</h3>
                             <span class="btn btn--small">Shop Now</span>
                         </div>
                     </a>
-                    <a href="contact.html" class="category-card">
+                    <a href="products.html" class="category-card">
                         <img src="img/category-3.jpg" alt="Accessories" width="400" height="300">
                         <div class="category-card__content">
                             <h3>Accessories</h3>
@@ -112,195 +140,52 @@
             </div>
         </section>
 
-        <section class="products" id="products">
+        <section class="featured-products">
             <div class="container">
-                <h2 class="section-title">Featured Products</h2>
-                <div class="products__tabs">
-                    <div class="tabs">
-                        <button class="tab active" data-tab="new">New Arrivals</button>
-                        <button class="tab" data-tab="best">Best Sellers</button>
-                        <button class="tab" data-tab="sale">On Sale</button>
-                    </div>
-                    <div class="tab-content active" data-tab="new">
-                        <div class="products__grid">
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-1.jpg" alt="Premium Yoga Mat" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Premium Yoga Mat</h3>
-                                    <p>Non-slip, eco-friendly yoga mat</p>
-                                    <span class="price">₹1,999</span>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-2.jpg" alt="Yoga Wheel" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Yoga Wheel</h3>
-                                    <p>Perfect for back bends and stretching</p>
-                                    <span class="price">₹1,299</span>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-3.jpg" alt="Yoga Bolster" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Yoga Bolster</h3>
-                                    <p>Supportive cushion for restorative poses</p>
-                                    <span class="price">₹1,799</span>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
+                <div class="featured-products__header">
+                    <h2 class="section-title">Featured Products</h2>
+                    <p>Discover our handpicked selection of premium yoga essentials</p>
+                </div>
+                
+                <div class="products__grid">
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img src="img/product-1.jpg" alt="Premium Yoga Mat" width="300" height="300">
+                            <div class="product-card__badge">Best Seller</div>
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Premium Yoga Mat</h3>
+                            <p>Non-slip, eco-friendly yoga mat</p>
+                            <span class="price">₹1,999</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
                         </div>
                     </div>
-                    <div class="tab-content" data-tab="best">
-                        <div class="products__grid">
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-4.jpg" alt="Cork Yoga Block" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Cork Yoga Block</h3>
-                                    <p>Sustainable cork yoga block for better support</p>
-                                    <span class="price">₹899</span>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-5.jpg" alt="Meditation Cushion" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Meditation Cushion</h3>
-                                    <p>Comfortable cushion for meditation practice</p>
-                                    <span class="price">₹1,499</span>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img src="img/product-2.jpg" alt="Yoga Wheel" width="300" height="300">
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Wheel</h3>
+                            <p>Perfect for back bends and stretching</p>
+                            <span class="price">₹1,299</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
                         </div>
                     </div>
-                    <div class="tab-content" data-tab="sale">
-                        <div class="products__grid">
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-6.jpg" alt="Yoga Strap" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Yoga Strap</h3>
-                                    <p>Cotton yoga strap for stretching</p>
-                                    <div class="price">
-                                        <span class="price--old">₹599</span>
-                                        <span class="price--new">₹399</span>
-                                    </div>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
-                            <div class="product-card">
-                                <div class="product-card__image">
-                                    <img src="img/product-7.jpg" alt="Yoga Towel" width="300" height="300">
-                                    
-                                </div>
-                                <div class="product-card__content">
-                                    <h3>Yoga Towel</h3>
-                                    <p>Non-slip microfiber yoga towel</p>
-                                    <div class="price">
-                                        <span class="price--old">₹999</span>
-                                        <span class="price--new">₹699</span>
-                                    </div>
-                                    <a href="contact.html" class="btn btn--primary">Order Now</a>
-                                </div>
-                            </div>
+                    <div class="product-card">
+                        <div class="product-card__image">
+                            <img src="img/product-3.jpg" alt="Yoga Bolster" width="300" height="300">
+                        </div>
+                        <div class="product-card__content">
+                            <h3>Yoga Bolster</h3>
+                            <p>Supportive cushion for restorative poses</p>
+                            <span class="price">₹1,799</span>
+                            <a href="contact.html" class="btn btn--primary">Order Now</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="features" id="features">
-            <div class="container">
-                <div class="features__grid">
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <img src="img/quality.svg" alt="Premium Quality" width="48" height="48">
-                        </div>
-                        <h3>Premium Quality</h3>
-                        <p>Carefully selected materials for durability and comfort</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <img src="img/shipping.svg" alt="Fast Shipping" width="48" height="48">
-                        </div>
-                        <h3>Fast Shipping</h3>
-                        <p>Free delivery across India on orders over ₹2000</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <img src="img/support.svg" alt="Expert Support" width="48" height="48">
-                        </div>
-                        <h3>Expert Support</h3>
-                        <p>Get help choosing the right equipment</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-card__icon">
-                            <img src="img/return.svg" alt="Easy Returns" width="48" height="48">
-                        </div>
-                        <h3>Easy Returns</h3>
-                        <p>30-day return policy for your peace of mind</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about" id="about">
-            <div class="container">
-                <div class="about__grid">
-                    <div class="about__content">
-                        <h2 class="section-title">About YogaBliss</h2>
-                        <p>At YogaBliss, we believe that quality equipment is essential for a fulfilling yoga practice. Our carefully curated collection of yoga products is designed to enhance your journey, whether you're a beginner or an experienced practitioner.</p>
-                        <div class="accordion">
-                            <div class="accordion__item">
-                                <button class="accordion__header">
-                                    Our Mission
-                                    <span class="accordion__icon"></span>
-                                </button>
-                                <div class="accordion__content">
-                                    <p>To provide high-quality yoga equipment that supports and enhances your practice, while promoting sustainability and mindful living.</p>
-                                </div>
-                            </div>
-                            <div class="accordion__item">
-                                <button class="accordion__header">
-                                    Quality Promise
-                                    <span class="accordion__icon"></span>
-                                </button>
-                                <div class="accordion__content">
-                                    <p>Every product in our collection is carefully tested and selected to ensure it meets our high standards of quality and durability.</p>
-                                </div>
-                            </div>
-                            <div class="accordion__item">
-                                <button class="accordion__header">
-                                    Sustainability
-                                    <span class="accordion__icon"></span>
-                                </button>
-                                <div class="accordion__content">
-                                    <p>We're committed to reducing our environmental impact by using eco-friendly materials and sustainable packaging.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about__image">
-                        <img src="img/about.jpg" alt="Yoga practice" width="600" height="400">
-                    </div>
+                
+                <div class="featured-products__view-all">
+                    <a href="products.html" class="btn btn--primary">View All Products</a>
                 </div>
             </div>
         </section>
@@ -385,41 +270,6 @@
             </div>
         </section>
 
-        <section class="video-guide">
-            <div class="container">
-                <h2 class="section-title">Yoga Practice Guide</h2>
-                <div class="video-guide__grid">
-                    <div class="video-guide__item">
-                        <div class="video-guide__thumbnail">
-                            <img src="img/guide-1.jpg" alt="Beginner's Guide to Yoga" width="400" height="225">
-                        </div>
-                        <div class="video-guide__content">
-                            <h3>Beginner's Guide to Yoga</h3>
-                            <p>Learn the basic poses and breathing techniques for your yoga practice.</p>
-                        </div>
-                    </div>
-                    <div class="video-guide__item">
-                        <div class="video-guide__thumbnail">
-                            <img src="img/guide-2.jpg" alt="Using Props in Your Practice" width="400" height="225">
-                        </div>
-                        <div class="video-guide__content">
-                            <h3>Using Props in Your Practice</h3>
-                            <p>Discover how to use yoga blocks, straps, and other props effectively.</p>
-                        </div>
-                    </div>
-                    <div class="video-guide__item">
-                        <div class="video-guide__thumbnail">
-                            <img src="img/guide-3.jpg" alt="Mat Care Guide" width="400" height="225">
-                        </div>
-                        <div class="video-guide__content">
-                            <h3>Mat Care Guide</h3>
-                            <p>Tips for maintaining and cleaning your yoga mat for long-lasting use.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section class="benefits">
             <div class="container">
                 <h2 class="section-title">Why Choose YogaBliss</h2>
@@ -472,16 +322,15 @@
                             <a href="index.html" class="logo">
                                 <img src="img/logo-white.svg" alt="YogaBliss logo" width="140" height="40">
                             </a>
-                            <p>Your trusted source for premium yoga equipment and accessories in India. We believe in quality, sustainability, and enhancing your yoga practice.</p>
+                            <p>Your trusted source for premium yoga equipment and accessories in India.</p>
                         </div>
                         <div class="footer__nav">
                             <h3>Company</h3>
                             <ul>
-                                <li><a href="#about">About Us</a></li>
-                                <li><a href="#features">Features</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="products.html">Products</a></li>
                                 <li><a href="contact.html">Contact</a></li>
-                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                <li><a href="terms-conditions.html">Terms & Conditions</a></li>
                             </ul>
                         </div>
                         <div class="footer__contact">
@@ -509,7 +358,7 @@
             <div class="footer__bottom">
                 <div class="container">
                     <div class="footer__bottom-inner">
-                        <p>&copy; 2024 YogaBliss. All rights reserved.</p>
+                        <p>&copy; 2024 YogaBliss. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
                     </div>
                 </div>
             </div>
